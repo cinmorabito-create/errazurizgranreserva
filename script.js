@@ -3,7 +3,9 @@ const navigation = document.querySelector('.main-nav');
 const form = document.querySelector('#competition-form');
 const formError = document.querySelector('#form-error');
 const formSuccess = document.querySelector('#form-success');
-const scriptUrl = 'https://script.google.com/macros/s/AKfycbz3POb6_tgz-xSMWkZoXlnBiLIZuNbW-z7pBEJES2FFeaRRadI51BdziBvcT_8bU-Smaw/exec';
+// Web app URL of apps-script/Code.gs, bound to the Sainsbury's entries sheet.
+// Left empty until that sheet exists, so entries never land in the UK sheet.
+const scriptUrl = '';
 const hero = document.querySelector('.hero');
 const heroImage = document.querySelector('.hero-image');
 const imageBreak = document.querySelector('.image-break');
@@ -90,6 +92,11 @@ form?.addEventListener('submit', async (event) => {
   if (!form.checkValidity()) {
     formError.textContent = 'Please complete the required fields and accept the Terms & Conditions.';
     form.querySelector(':invalid')?.focus();
+    return;
+  }
+
+  if (!scriptUrl) {
+    formError.textContent = 'Entries are not open yet. Please try again soon.';
     return;
   }
 
