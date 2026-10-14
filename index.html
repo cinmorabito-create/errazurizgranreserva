@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Errazuriz Estate Reserva. Great stories, discovered one glass at a time.">
+  <title>Estate Reserva | Errazuriz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Errazuriz Estate home">
+      <img src="assets/errazuriz-logo.png" alt="Errazuriz">
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#story">Our story</a>
+      <a href="#wines">The wines</a>
+      <a class="nav-cta" href="#competition">Enter now <span aria-hidden="true">↗︎</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero-reading.jpg"
+           srcset="assets/hero-reading-960.jpg 960w, assets/hero-reading.jpg 1440w, assets/hero-reading-1920.jpg 1920w"
+           sizes="100vw" width="1440" height="961"
+           alt="Friends sharing a book, wine and food around a table" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Errazuriz · Estate Reserva</p>
+        <h1 id="hero-title">Our story.<br><em>Your discovery.</em></h1>
+        <p class="hero-intro">A good book opens a world. So does a bottle shared at the right table.</p>
+        <a class="button button-light" href="#competition">Bring Errazuriz to your book club <span aria-hidden="true">↗︎</span></a>
+      </div>
+      <a class="scroll-cue" href="#story" aria-label="Scroll to our story"><span>Scroll to discover</span><b aria-hidden="true">↓︎</b></a>
+    </section>
+
+    <section class="statement" id="story" aria-labelledby="story-title">
+      <div class="section-kicker">A chapter worth sharing</div>
+      <div class="statement-grid">
+        <h2 id="story-title">Great stories are made of <em>moments.</em></h2>
+        <div class="statement-copy">
+          <p>Every experience, every connection, a vibrant hue. Behind every bottle lies a world waiting to be explored: our unwavering dedication and pursuit of excellence, shaped in the Aconcagua Valley since 1870.</p>
+          <p>Yours is made up of moments, memories and chapters yet to be written. Raise a glass to the next one.</p>
+          <a class="text-link" href="https://www.errazuriz.com/estate" target="_blank" rel="noreferrer">Discover the Estate story <span aria-hidden="true">↗︎</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-break" aria-label="Estate Reserva at the table">
+      <picture>
+        <source type="image/webp" sizes="100vw"
+                srcset="assets/estate-662-800.webp 800w, assets/estate-662.webp 1400w">
+        <img src="assets/estate-662.jpg"
+             srcset="assets/estate-662-800.jpg 800w, assets/estate-662.jpg 1400w"
+             sizes="100vw" width="1400" height="2098" loading="lazy"
+             alt="Errazuriz Estate Reserva Sauvignon Blanc served at a table with food">
+      </picture>
+      <div class="image-note"><span>Made for the moment</span><strong>Pour. Pause.<br>Turn the page.</strong></div>
+    </section>
+
+    <section class="wines" id="wines" aria-labelledby="wines-title">
+      <div class="section-kicker">The collection</div>
+      <div class="wines-heading">
+        <div>
+          <h2 id="wines-title">Estate Reserva</h2>
+          <p>A collection of expressive wines, made to meet every kind of story.</p>
+        </div>
+      </div>
+      <div class="wine-list">
+        <div class="wine-card" data-accent="blue">
+          <span class="wine-number">01</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-sauvignon-blanc">Sauvignon Blanc</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-sauvignon-blanc/2024" target="_blank" rel="noreferrer" aria-label="View Sauvignon Blanc on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Citrus, lime and tropical fruit. Perfect with pizza.</span>
+          <div class="wine-bottle" id="bottle-sauvignon-blanc">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/sauvignon-blanc.png" alt="Bottle of Errazuriz Estate Reserva Sauvignon Blanc" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="gold">
+          <span class="wine-number">02</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-chardonnay">Chardonnay</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-chardonnay/2025" target="_blank" rel="noreferrer" aria-label="View Chardonnay on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Fresh, crisp and lively. Perfect for picnics.</span>
+          <div class="wine-bottle" id="bottle-chardonnay">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/chardonnay.png" alt="Bottle of Errazuriz Estate Reserva Chardonnay" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="aqua">
+          <span class="wine-number">03</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-pinot-grigio">Pinot Grigio</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-pinot-grigio" target="_blank" rel="noreferrer" aria-label="View Pinot Grigio on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Pear, apple, floral and citrus notes.</span>
+          <div class="wine-bottle" id="bottle-pinot-grigio">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/pinot-grigio.png" alt="Bottle of Errazuriz Estate Reserva Pinot Grigio" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="claret">
+          <span class="wine-number">04</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-cabernet-sauvignon">Cabernet Sauvignon</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-cabernet-sauvignon/2024" target="_blank" rel="noreferrer" aria-label="View Cabernet Sauvignon on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Silky, smooth, red and black fruit. Great with Sunday roast.</span>
+          <div class="wine-bottle" id="bottle-cabernet-sauvignon">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/cabernet-sauvignon.png" alt="Bottle of Errazuriz Estate Reserva Cabernet Sauvignon" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="plum">
+          <span class="wine-number">05</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-merlot">Merlot</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-merlot/2024" target="_blank" rel="noreferrer" aria-label="View Merlot on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Fruity, smooth, herbal and balsamic. Great with cheese or pasta.</span>
+          <div class="wine-bottle" id="bottle-merlot">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/merlot.png" alt="Bottle of Errazuriz Estate Reserva Merlot" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="terracotta">
+          <span class="wine-number">06</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-carmenere">Carmenere</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-carmenere/2023" target="_blank" rel="noreferrer" aria-label="View Carmenere on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Full-bodied, spicy and smooth. Perfect with lamb ragu.</span>
+          <div class="wine-bottle" id="bottle-carmenere">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/carmenere.png" alt="Bottle of Errazuriz Estate Reserva Carmenere" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="blue">
+          <span class="wine-number">07</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-malbec">Malbec</button>
+          <a class="wine-link" href="https://www.errazuriz.com/estate" target="_blank" rel="noreferrer" aria-label="View Malbec on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Red and black fruit, violet and a hint of spice. Great with grilled red meats.</span>
+          <div class="wine-bottle" id="bottle-malbec">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/malbec.png" alt="Bottle of Errazuriz Estate Reserva Malbec" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="claret">
+          <span class="wine-number">08</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-pinot-noir">Pinot Noir</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-pinot-noir/2023" target="_blank" rel="noreferrer" aria-label="View Pinot Noir on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Red fruit, floral and balsamic. Try with lamb and vegetables.</span>
+          <div class="wine-bottle" id="bottle-pinot-noir">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/pinot-noir.png" alt="Bottle of Errazuriz Estate Reserva Pinot Noir" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="wine-card" data-accent="plum">
+          <span class="wine-number">09</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-syrah">Syrah</button>
+          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-shiraz/2023" target="_blank" rel="noreferrer" aria-label="View Syrah on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Smooth, spicy and fruity. Perfect for a BBQ.</span>
+          <div class="wine-bottle" id="bottle-syrah">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/syrah.png" alt="Bottle of Errazuriz Estate Reserva Syrah" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="competition" id="competition" aria-labelledby="competition-title">
+      <div class="competition-intro">
+        <div class="section-kicker">Our story, your next chapter</div>
+        <h2 id="competition-title">Bring Errazuriz to your book club!</h2>
+        <p class="competition-lede">Discover Great Stories with Great Wine.</p>
+        <div class="prize">
+          <span class="prize-label">The prize</span>
+          <p>A case (6 x 75cl) of Errazuriz Gran Reserva Chardonnay, a case (6 x 75cl) of Errazuriz Gran Reserva Pinot Noir and a <strong>set of 6 Errazuriz branded wine glasses</strong>, the perfect accompaniment to hosting your own book club.</p>
+        </div>
+      </div>
+      <div class="form-panel">
+        <p class="form-intro">Enter your details below to take part.</p>
+        <form id="competition-form" novalidate>
+          <div class="form-grid">
+            <label for="first-name">First name <span>*</span><input id="first-name" name="firstName" autocomplete="given-name" required></label>
+            <label for="surname">Surname <span>*</span><input id="surname" name="surname" autocomplete="family-name" required></label>
+          </div>
+          <label for="email">Email address <span>*</span><input id="email" name="email" type="email" autocomplete="email" required></label>
+          <div class="consents">
+            <label class="checkbox-row" for="terms"><input id="terms" name="terms" type="checkbox" required><span class="custom-checkbox" aria-hidden="true"></span><span>I have read and agree to the <a href="assets/sainsburys-terms.pdf" target="_blank" rel="noreferrer">Terms &amp; Conditions</a>. <b>*</b></span></label>
+            <label class="checkbox-row" for="marketing"><input id="marketing" name="marketing" type="checkbox"><span class="custom-checkbox" aria-hidden="true"></span><span>Yes, I would like to receive news and offers from Errazuriz.</span></label>
+          </div>
+          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+          <button class="button button-dark" type="submit">Enter the competition <span aria-hidden="true">↗︎</span></button>
+          <p class="form-legal">* Required fields. Please enjoy responsibly. Terms &amp; Conditions apply.</p>
+        </form>
+        <div class="form-success" id="form-success" tabindex="-1" hidden>
+          <span class="success-mark" aria-hidden="true">✓</span>
+          <h3>Thank you for entering.</h3>
+          <p>Your details have been received. Good luck with your next chapter.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="wordmark footer-mark" href="#top" aria-label="Errazuriz Estate home"><img src="assets/errazuriz-logo.png" alt="Errazuriz"></a><p>Our story. Your discovery.</p></div>
+    <div class="footer-bottom"><span>© 2026 Errazuriz. All rights reserved.</span><span>Drink responsibly.</span><a href="https://www.errazuriz.com/en/sustainability/responsable-consume" target="_blank" rel="noreferrer">Responsible consumption ↗︎</a><a href="assets/sainsburys-terms.pdf" target="_blank" rel="noreferrer">Terms &amp; Conditions ↗︎</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
