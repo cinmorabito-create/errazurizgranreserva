@@ -4,7 +4,7 @@ Landing estática (HTML/CSS/JS, sin build) del concurso *Our Story Your Discover
 
 ## Enlaces
 - Repositorio: https://github.com/cinmorabito-create/errazurizgranreserva
-- Sitio en vivo: pendiente (conectar el repo a Vercel; cada commit a `main` publica)
+- Sitio en vivo: https://errazurizgranreserva.vercel.app/ (Vercel; cada commit a `main` publica)
 - Registro de inscripciones (Google Sheet): https://docs.google.com/spreadsheets/d/1FNcTb5pr9DuMgzN5WI2nqbxAGkcPSamW6m_i1IWZEUk/edit
 - Endpoint del formulario (Apps Script): https://script.google.com/macros/s/AKfycbytR_cVj5GbIIvdykNBdO_gY4A4Yz0OFgVYG_CNiHYbOP309oKgKf695e7RyNGdaAOn9A/exec
 - Bases (T&Cs): `assets/sainsburys-terms.pdf`, enlazado desde el checkbox obligatorio y el footer
