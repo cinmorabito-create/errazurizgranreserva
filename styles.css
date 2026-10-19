@@ -110,6 +110,9 @@ label { display: block; font-size: 10px; letter-spacing: .11em; margin-bottom: 2
 label > span:first-of-type { color: var(--sky); }
 input:not([type="checkbox"]) { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; display: block; font-size: 16px; letter-spacing: 0; margin-top: 7px; outline: 0; padding: 9px 0; width: 100%; }
 input:not([type="checkbox"]):focus { border-color: var(--sky); }
+input[type="date"] { -webkit-appearance: none; appearance: none; min-height: 43px; text-align: left; }
+.was-validated input:not([type="checkbox"]):invalid { border-color: #a52617; }
+.was-validated .checkbox-row input:invalid + .custom-checkbox { border-color: #a52617; }
 .form-grid { display: grid; gap: 28px; grid-template-columns: 1fr 1fr; }
 .consents { margin-top: 8px; }
 .checkbox-row { align-items: flex-start; display: flex; font-size: 11px; gap: 10px; letter-spacing: 0; line-height: 1.45; text-transform: none; }

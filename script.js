@@ -85,12 +85,37 @@ wineList?.addEventListener('mouseleave', () => {
   if (canHover.matches) showBottle(pinnedCard);
 });
 
+// The T&Cs restrict entry to adults resident in England, Wales and Scotland,
+// so Northern Ireland (BT) and Crown Dependency (GY, JE, IM) postcodes are out.
+const ukPostcode = /^[A-Z]{1,2}[0-9][A-Z0-9]? ?[0-9][A-Z]{2}$/i;
+const excludedPostcode = /^(BT|GY|JE|IM)[0-9]/i;
+const isPhone = (value) => /^[0-9 +()-]+$/.test(value) && /^\d{10,15}$/.test(value.replace(/\D/g, ''));
+
+const isAdult = (isoDate) => {
+  const [year, month, day] = isoDate.split('-').map(Number);
+  const eighteenth = new Date(year + 18, month - 1, day);
+  return eighteenth <= new Date();
+};
+
 form?.addEventListener('submit', async (event) => {
   event.preventDefault();
   formError.textContent = '';
+  form.classList.add('was-validated');
+
+  const { dob, phone, postcode } = form.elements;
+  const ageError = dob.value && !isAdult(dob.value) ? 'You must be 18 or over to enter.' : '';
+  const postcodeError = !postcode.value ? ''
+    : !ukPostcode.test(postcode.value.trim()) ? 'Please enter a valid UK postcode.'
+    : excludedPostcode.test(postcode.value.trim()) ? 'This prize draw is open to residents of England, Wales and Scotland only.'
+    : '';
+  const phoneError = phone.value && !isPhone(phone.value.trim()) ? 'Please enter a valid phone number.' : '';
+  dob.setCustomValidity(ageError);
+  phone.setCustomValidity(phoneError);
+  postcode.setCustomValidity(postcodeError);
 
   if (!form.checkValidity()) {
-    formError.textContent = 'Please complete the required fields and accept the Terms & Conditions.';
+    formError.textContent = ageError || phoneError || postcodeError
+      || 'Please complete the required fields and accept the Terms & Conditions.';
     form.querySelector(':invalid')?.focus();
     return;
   }
@@ -112,7 +137,13 @@ form?.addEventListener('submit', async (event) => {
       body: JSON.stringify({
         firstName: form.elements.firstName.value.trim(),
         surname: form.elements.surname.value.trim(),
+        dob: dob.value,
         email: form.elements.email.value.trim(),
+        phone: form.elements.phone.value.trim(),
+        addressLine1: form.elements.addressLine1.value.trim(),
+        addressLine2: form.elements.addressLine2.value.trim(),
+        town: form.elements.town.value.trim(),
+        postcode: postcode.value.trim().toUpperCase(),
         termsAccepted: form.elements.terms.checked,
         marketingOptIn: form.elements.marketing.checked
       })
@@ -124,6 +155,6 @@ form?.addEventListener('submit', async (event) => {
   } catch (error) {
     formError.textContent = 'We could not submit your entry. Please try again.';
     submitButton.disabled = false;
-    submitButton.innerHTML = 'Enter the competition <span aria-hidden="true">↗︎</span>';
+    submitButton.innerHTML = 'Enter the prize draw <span aria-hidden="true">↗︎</span>';
   }
 });
