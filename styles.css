@@ -4,7 +4,7 @@
   --sage: #b7c6aa;
   --paper: #f5f0e6;
   --cream: #ebe2d2;
-  --coral: #d86c4e;
+  --sky: #3a8fc8;
   --gold: #c7a35a;
   --line: rgba(23, 33, 27, .18);
   --serif: 'Fraunces', Georgia, serif;
@@ -24,7 +24,7 @@ button, input { font: inherit; }
 .footer-mark img { filter: invert(1); }
 .main-nav { align-items: center; display: flex; font-size: 11px; gap: 33px; letter-spacing: .1em; position: absolute; right: 5vw; text-transform: uppercase; }
 .main-nav a { text-decoration: none; }
-.main-nav a:hover, .text-link:hover { color: var(--coral); }
+.main-nav a:hover, .text-link:hover { color: var(--sky); }
 .nav-cta { border-bottom: 1px solid currentColor; padding-bottom: 4px; }
 .menu-toggle { display: none; }
 .hero { background: var(--forest); color: var(--paper); min-height: 760px; overflow: hidden; position: relative; }
@@ -36,19 +36,19 @@ button, input { font: inherit; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 400; }
 h1 { font-size: clamp(4rem, 8vw, 8rem); letter-spacing: -.065em; line-height: .91; margin: 0 0 30px; }
-h1 em, h2 em { color: var(--coral); font-style: italic; }
+h1 em, h2 em { color: var(--sky); font-style: italic; }
 .hero h1 em { letter-spacing: .03em; }
 .hero-intro { font-size: 17px; max-width: 360px; }
 .button { align-items: center; border: 1px solid transparent; cursor: pointer; display: inline-flex; font-size: 10px; gap: 22px; justify-content: center; letter-spacing: .13em; min-height: 54px; padding: 13px 21px; text-decoration: none; text-transform: uppercase; transition: background .2s, color .2s, transform .2s; }
 .button:hover { transform: translateY(-2px); }
 .button-light { background: var(--paper); color: var(--ink); margin-top: 20px; }
-.button-light:hover { background: var(--coral); color: var(--paper); }
+.button-light:hover { background: var(--sky); color: var(--paper); }
 .button-dark { background: var(--forest); color: var(--paper); margin-top: 15px; width: 100%; }
-.button-dark:hover { background: var(--coral); }
+.button-dark:hover { background: var(--sky); }
 .scroll-cue { align-items: center; bottom: 32px; display: flex; font-size: 9px; gap: 17px; left: 5vw; letter-spacing: .17em; position: absolute; text-decoration: none; text-transform: uppercase; transform: rotate(-90deg); transform-origin: left center; }
 .scroll-cue b { font-size: 20px; font-weight: 400; }
 .statement { background: var(--paper); padding: 145px 11vw 150px; }
-.section-kicker { color: var(--coral); margin-bottom: 28px; }
+.section-kicker { color: var(--sky); margin-bottom: 28px; }
 .statement-grid { display: grid; gap: 10vw; grid-template-columns: 1.05fr .8fr; }
 #story-title { font-size: clamp(3.2rem, 5.5vw, 6rem); letter-spacing: .02em; line-height: .92; }
 .statement-copy { color: rgba(23, 33, 27, .77); font-size: 17px; max-width: 440px; }
@@ -64,13 +64,13 @@ h1 em, h2 em { color: var(--coral); font-style: italic; }
 .wines { background: var(--cream); padding: 130px 11vw 145px; }
 .wines-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 62px; }
 .wines-heading p { color: rgba(23, 33, 27, .7); margin: 22px 0 0; }
-.wine-count { align-self: start; color: var(--coral); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+.wine-count { align-self: start; color: var(--sky); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
 .wine-list { border-top: 1px solid var(--line); }
 .wine-card { --pad: 15px; --pad-open: 24px; align-items: center; border-bottom: 1px solid var(--line); column-gap: 20px; display: grid; grid-template-columns: 46px 1fr 28px; min-height: 79px; padding: 0 var(--pad); text-decoration: none; transition: background .3s ease, padding .2s; }
 .wine-card:hover { background: var(--paper); padding-left: var(--pad-open); }
-.wine-number { color: var(--coral); font-size: 10px; letter-spacing: .12em; }
+.wine-number { color: var(--sky); font-size: 10px; letter-spacing: .12em; }
 .wine-name { background: none; border: 0; color: inherit; cursor: pointer; font-family: var(--serif); font-size: clamp(1.3rem, 2.4vw, 2.2rem); letter-spacing: -.04em; line-height: 1.08; padding: 0; text-align: left; }
-.wine-name:hover, .wine-name:focus-visible { color: var(--coral); }
+.wine-name:hover, .wine-name:focus-visible { color: var(--sky); }
 .wine-link { align-items: center; color: inherit; display: flex; justify-content: flex-end; text-decoration: none; }
 .wine-arrow { font-size: 20px; text-align: right; }
 .wine-note { color: var(--forest); font-size: 12px; grid-column: 2; line-height: 1.25; margin-bottom: 17px; margin-top: -2px; white-space: nowrap; }
@@ -97,7 +97,7 @@ h1 em, h2 em { color: var(--coral); font-style: italic; }
 .wine-bottle-inner { overflow: hidden; }
 .wine-bottle img { display: block; height: 325px; margin: 6px auto 26px; object-fit: contain; opacity: 0; transition: opacity .25s ease .05s; width: auto; }
 .wine-card.is-open .wine-bottle img { opacity: 1; }
-.competition { background: var(--coral); color: var(--paper); display: grid; grid-template-columns: .95fr 1.05fr; padding: 120px 11vw; }
+.competition { background: var(--sky); color: var(--paper); display: grid; grid-template-columns: .95fr 1.05fr; padding: 120px 11vw; }
 .competition .section-kicker { color: var(--ink); }
 .competition h2 { max-width: 520px; }
 .competition-lede { font-family: var(--serif); font-size: 25px; margin: 6px 0 65px; }
@@ -107,9 +107,9 @@ h1 em, h2 em { color: var(--coral); font-style: italic; }
 .form-panel { background: var(--paper); color: var(--ink); margin-left: 8vw; padding: 43px 48px 37px; }
 .form-intro { font-family: var(--serif); font-size: 25px; margin-bottom: 28px; }
 label { display: block; font-size: 10px; letter-spacing: .11em; margin-bottom: 21px; text-transform: uppercase; }
-label > span:first-of-type { color: var(--coral); }
+label > span:first-of-type { color: var(--sky); }
 input:not([type="checkbox"]) { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; display: block; font-size: 16px; letter-spacing: 0; margin-top: 7px; outline: 0; padding: 9px 0; width: 100%; }
-input:not([type="checkbox"]):focus { border-color: var(--coral); }
+input:not([type="checkbox"]):focus { border-color: var(--sky); }
 .form-grid { display: grid; gap: 28px; grid-template-columns: 1fr 1fr; }
 .consents { margin-top: 8px; }
 .checkbox-row { align-items: flex-start; display: flex; font-size: 11px; gap: 10px; letter-spacing: 0; line-height: 1.45; text-transform: none; }
@@ -117,12 +117,12 @@ input:not([type="checkbox"]):focus { border-color: var(--coral); }
 .custom-checkbox { border: 1px solid var(--ink); flex: 0 0 17px; height: 17px; pointer-events: none; position: relative; }
 .checkbox-row input:checked + .custom-checkbox { background: var(--forest); border-color: var(--forest); }
 .checkbox-row input:checked + .custom-checkbox::after { border: solid var(--paper); border-width: 0 1px 1px 0; content: ''; height: 9px; left: 5px; position: absolute; top: 1px; transform: rotate(45deg); width: 4px; }
-.checkbox-row input:focus-visible + .custom-checkbox { outline: 2px solid var(--coral); outline-offset: 3px; }
-.checkbox-row a { color: var(--coral); }
+.checkbox-row input:focus-visible + .custom-checkbox { outline: 2px solid var(--sky); outline-offset: 3px; }
+.checkbox-row a { color: var(--sky); }
 .form-error { color: #a52617; font-size: 11px; min-height: 18px; margin: 2px 0 0; }
 .form-legal { color: rgba(23, 33, 27, .6); font-size: 10px; margin: 17px 0 0; }
 .form-success { border-top: 1px solid var(--line); padding-top: 28px; }
-.success-mark { color: var(--coral); font-size: 28px; }
+.success-mark { color: var(--sky); font-size: 28px; }
 .form-success h3 { font-size: 36px; letter-spacing: -.05em; margin: 15px 0 8px; }
 .form-success p { margin: 0; }
 .site-footer { background: var(--ink); color: var(--paper); padding: 54px 5vw 27px; }
@@ -130,7 +130,7 @@ input:not([type="checkbox"]):focus { border-color: var(--coral); }
 .footer-top p { color: var(--sage); font-family: var(--serif); font-size: 23px; margin: 3px 0 0; }
 .footer-bottom { border-top: 1px solid rgba(245, 240, 230, .2); display: flex; font-size: 9px; gap: 20px; justify-content: space-between; letter-spacing: .08em; margin-top: 70px; padding-top: 17px; text-transform: uppercase; }
 .footer-bottom a { text-decoration: none; }
-.footer-bottom a:hover { color: var(--coral); }
+.footer-bottom a:hover { color: var(--sky); }
 @media (max-width: 1200px) and (min-width: 961px) {
   .hero-image { object-position: left center; }
   .hero-copy { max-width: 440px; }
