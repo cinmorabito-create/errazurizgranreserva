@@ -18,8 +18,8 @@
 ## Assets And Legal Source
 
 - Hero and Estate images are already processed in `assets/` (copied from LandingUK).
-- Treat `Recursos/Errazuriz Our Story Your Discovery TCs Sainsburys magazine festive 2026.pdf` (published as `assets/sainsburys-terms.pdf`) as the authoritative competition terms source. Link the terms from the required consent control and relevant footer/legal area.
-- The DOCX with the same title is an editable companion, but the final PDF controls published legal text.
+- Treat `Recursos/Errazuriz_Book_Club_Prize_Draw_TCs_Sainsburys_Magazine_Festive_2026.pdf` (published as `assets/sainsburys-terms.pdf`) as the authoritative competition terms source. Link the terms from the required consent control and relevant footer/legal area.
+- The DOCX with the same name is an editable companion, but the final PDF controls published legal text.
 - Do not invent eligibility, dates, privacy language, winner selection, or submission handling. Extract them from the PDF or make the missing dependency explicit before launch.
 
 ## Implementation Conventions

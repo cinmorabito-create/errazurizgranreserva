@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Errazuriz Estate Reserva. Great stories, discovered one glass at a time.">
-  <title>Estate Reserva | Errazuriz</title>
+  <meta name="description" content="Errazuriz Gran Reserva. Great stories, discovered one glass at a time.">
+  <title>Gran Reserva | Errazuriz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="site-header" id="top">
-    <a class="wordmark" href="#top" aria-label="Errazuriz Estate home">
+    <a class="wordmark" href="#top" aria-label="Errazuriz home">
       <img src="assets/errazuriz-logo.png" alt="Errazuriz">
     </a>
     <nav class="main-nav" aria-label="Primary navigation">
@@ -24,13 +24,21 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/hero-reading.jpg"
-           srcset="assets/hero-reading-960.jpg 960w, assets/hero-reading.jpg 1440w, assets/hero-reading-1920.jpg 1920w"
-           sizes="100vw" width="1440" height="961"
-           alt="Friends sharing a book, wine and food around a table" fetchpriority="high">
+      <picture>
+        <source media="(max-width: 960px)"
+                srcset="assets/hero-range-mobile-640.jpg 640w, assets/hero-range-mobile-960.jpg 960w"
+                sizes="100vw" width="640" height="698">
+        <source media="(max-width: 1200px)"
+                srcset="assets/hero-range-tablet-1200.jpg 1200w, assets/hero-range-tablet-1800.jpg 1800w"
+                sizes="100vw" width="1200" height="801">
+        <img class="hero-image" src="assets/hero-range-1440.jpg"
+             srcset="assets/hero-range-960.jpg 960w, assets/hero-range-1440.jpg 1440w, assets/hero-range-1920.jpg 1920w, assets/hero-range-2560.jpg 2560w"
+             sizes="100vw" width="1440" height="759"
+             alt="The Errazuriz Gran Reserva range: Carmenere, Chardonnay, Cabernet Sauvignon, Pinot Noir and Sauvignon Blanc" fetchpriority="high">
+      </picture>
       <div class="hero-shade"></div>
       <div class="hero-copy">
-        <p class="eyebrow">Errazuriz · Estate Reserva</p>
+        <p class="eyebrow">Errazuriz · Gran Reserva</p>
         <h1 id="hero-title">Our story.<br><em>Your discovery.</em></h1>
         <p class="hero-intro">A good book opens a world. So does a bottle shared at the right table.</p>
         <a class="button button-light" href="#competition">Bring Errazuriz to your book club <span aria-hidden="true">↗︎</span></a>
@@ -50,7 +58,7 @@
       </div>
     </section>
 
-    <section class="image-break" aria-label="Estate Reserva at the table">
+    <section class="image-break" aria-label="Errazuriz at the table">
       <picture>
         <source type="image/webp" sizes="100vw"
                 srcset="assets/estate-662-800.webp 800w, assets/estate-662.webp 1400w">
@@ -66,7 +74,7 @@
       <div class="section-kicker">The collection</div>
       <div class="wines-heading">
         <div>
-          <h2 id="wines-title">Estate Reserva</h2>
+          <h2 id="wines-title">Gran Reserva</h2>
           <p>A collection of expressive wines, made to meet every kind of story.</p>
         </div>
       </div>
@@ -74,82 +82,55 @@
         <div class="wine-card" data-accent="blue">
           <span class="wine-number">01</span>
           <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-sauvignon-blanc">Sauvignon Blanc</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-sauvignon-blanc/2024" target="_blank" rel="noreferrer" aria-label="View Sauvignon Blanc on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Citrus, lime and tropical fruit. Perfect with pizza.</span>
+          <a class="wine-link" href="assets/tech-sheets/gran-reserva-sauvignon-blanc.pdf" target="_blank" rel="noreferrer" aria-label="View the Gran Reserva Sauvignon Blanc technical sheet (PDF)"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Lime, pineapple, passionfruit and orange blossom. Fresh, mineral and vibrant.</span>
           <div class="wine-bottle" id="bottle-sauvignon-blanc">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/sauvignon-blanc.png" alt="Bottle of Errazuriz Estate Reserva Sauvignon Blanc" loading="lazy"></div>
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/gran-reserva-sauvignon-blanc.png" alt="Bottle of Errazuriz Gran Reserva Sauvignon Blanc" loading="lazy"></div>
           </div>
         </div>
         <div class="wine-card" data-accent="gold">
           <span class="wine-number">02</span>
           <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-chardonnay">Chardonnay</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-chardonnay/2025" target="_blank" rel="noreferrer" aria-label="View Chardonnay on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Fresh, crisp and lively. Perfect for picnics.</span>
+          <a class="wine-link" href="assets/tech-sheets/gran-reserva-chardonnay.pdf" target="_blank" rel="noreferrer" aria-label="View the Gran Reserva Chardonnay technical sheet (PDF)"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">White flowers, papaya, pineapple and citrus. Fresh, ample and persistent.</span>
           <div class="wine-bottle" id="bottle-chardonnay">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/chardonnay.png" alt="Bottle of Errazuriz Estate Reserva Chardonnay" loading="lazy"></div>
-          </div>
-        </div>
-        <div class="wine-card" data-accent="aqua">
-          <span class="wine-number">03</span>
-          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-pinot-grigio">Pinot Grigio</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-pinot-grigio" target="_blank" rel="noreferrer" aria-label="View Pinot Grigio on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Pear, apple, floral and citrus notes.</span>
-          <div class="wine-bottle" id="bottle-pinot-grigio">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/pinot-grigio.png" alt="Bottle of Errazuriz Estate Reserva Pinot Grigio" loading="lazy"></div>
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/gran-reserva-chardonnay.png" alt="Bottle of Errazuriz Gran Reserva Chardonnay" loading="lazy"></div>
           </div>
         </div>
         <div class="wine-card" data-accent="claret">
-          <span class="wine-number">04</span>
-          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-cabernet-sauvignon">Cabernet Sauvignon</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-cabernet-sauvignon/2024" target="_blank" rel="noreferrer" aria-label="View Cabernet Sauvignon on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Silky, smooth, red and black fruit. Great with Sunday roast.</span>
-          <div class="wine-bottle" id="bottle-cabernet-sauvignon">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/cabernet-sauvignon.png" alt="Bottle of Errazuriz Estate Reserva Cabernet Sauvignon" loading="lazy"></div>
+          <span class="wine-number">03</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-pinot-noir">Pinot Noir</button>
+          <a class="wine-link" href="assets/tech-sheets/gran-reserva-pinot-noir.pdf" target="_blank" rel="noreferrer" aria-label="View the Gran Reserva Pinot Noir technical sheet (PDF)"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Raspberry, sour cherry, violet and gentle spice. Silky and fresh.</span>
+          <div class="wine-bottle" id="bottle-pinot-noir">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/gran-reserva-pinot-noir.png" alt="Bottle of Errazuriz Gran Reserva Pinot Noir" loading="lazy"></div>
           </div>
         </div>
         <div class="wine-card" data-accent="plum">
-          <span class="wine-number">05</span>
-          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-merlot">Merlot</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-merlot/2024" target="_blank" rel="noreferrer" aria-label="View Merlot on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Fruity, smooth, herbal and balsamic. Great with cheese or pasta.</span>
-          <div class="wine-bottle" id="bottle-merlot">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/merlot.png" alt="Bottle of Errazuriz Estate Reserva Merlot" loading="lazy"></div>
+          <span class="wine-number">04</span>
+          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-cabernet-sauvignon">Cabernet Sauvignon</button>
+          <a class="wine-link" href="assets/tech-sheets/gran-reserva-cabernet-sauvignon.pdf" target="_blank" rel="noreferrer" aria-label="View the Gran Reserva Cabernet Sauvignon technical sheet (PDF)"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Ripe black fruit, roasted coffee and cigar box. Broad, rounded and silky.</span>
+          <div class="wine-bottle" id="bottle-cabernet-sauvignon">
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/gran-reserva-cabernet-sauvignon.png" alt="Bottle of Errazuriz Gran Reserva Cabernet Sauvignon" loading="lazy"></div>
           </div>
         </div>
         <div class="wine-card" data-accent="terracotta">
-          <span class="wine-number">06</span>
+          <span class="wine-number">05</span>
           <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-carmenere">Carmenere</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-carmenere/2023" target="_blank" rel="noreferrer" aria-label="View Carmenere on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Full-bodied, spicy and smooth. Perfect with lamb ragu.</span>
+          <a class="wine-link" href="assets/tech-sheets/gran-reserva-carmenere.pdf" target="_blank" rel="noreferrer" aria-label="View the Gran Reserva Carmenere technical sheet (PDF)"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Ripe black fruit, paprika and cocoa. Broad and silky with fine tannins.</span>
           <div class="wine-bottle" id="bottle-carmenere">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/carmenere.png" alt="Bottle of Errazuriz Estate Reserva Carmenere" loading="lazy"></div>
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/gran-reserva-carmenere.png" alt="Bottle of Errazuriz Gran Reserva Carmenere" loading="lazy"></div>
           </div>
         </div>
-        <div class="wine-card" data-accent="blue">
-          <span class="wine-number">07</span>
+        <div class="wine-card" data-accent="aqua">
+          <span class="wine-number">06</span>
           <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-malbec">Malbec</button>
-          <a class="wine-link" href="https://www.errazuriz.com/estate" target="_blank" rel="noreferrer" aria-label="View Malbec on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Red and black fruit, violet and a hint of spice. Great with grilled red meats.</span>
+          <a class="wine-link" href="assets/tech-sheets/gran-reserva-malbec.pdf" target="_blank" rel="noreferrer" aria-label="View the Gran Reserva Malbec technical sheet (PDF)"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
+          <span class="wine-note">Lavender, plum and black fruit with a touch of liquorice. Velvety and juicy.</span>
           <div class="wine-bottle" id="bottle-malbec">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/malbec.png" alt="Bottle of Errazuriz Estate Reserva Malbec" loading="lazy"></div>
-          </div>
-        </div>
-        <div class="wine-card" data-accent="claret">
-          <span class="wine-number">08</span>
-          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-pinot-noir">Pinot Noir</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-pinot-noir/2023" target="_blank" rel="noreferrer" aria-label="View Pinot Noir on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Red fruit, floral and balsamic. Try with lamb and vegetables.</span>
-          <div class="wine-bottle" id="bottle-pinot-noir">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/pinot-noir.png" alt="Bottle of Errazuriz Estate Reserva Pinot Noir" loading="lazy"></div>
-          </div>
-        </div>
-        <div class="wine-card" data-accent="plum">
-          <span class="wine-number">09</span>
-          <button class="wine-name" type="button" aria-expanded="false" aria-controls="bottle-syrah">Syrah</button>
-          <a class="wine-link" href="https://www.errazuriz.com/en/wines/estate/estate-shiraz/2023" target="_blank" rel="noreferrer" aria-label="View Syrah on errazuriz.com"><span class="wine-arrow" aria-hidden="true">↗︎</span></a>
-          <span class="wine-note">Smooth, spicy and fruity. Perfect for a BBQ.</span>
-          <div class="wine-bottle" id="bottle-syrah">
-            <div class="wine-bottle-inner"><img src="assets/bottleshots/syrah.png" alt="Bottle of Errazuriz Estate Reserva Syrah" loading="lazy"></div>
+            <div class="wine-bottle-inner"><img src="assets/bottleshots/gran-reserva-malbec.png" alt="Bottle of Errazuriz Gran Reserva Malbec" loading="lazy"></div>
           </div>
         </div>
       </div>
@@ -191,7 +172,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-top"><a class="wordmark footer-mark" href="#top" aria-label="Errazuriz Estate home"><img src="assets/errazuriz-logo.png" alt="Errazuriz"></a><p>Our story. Your discovery.</p></div>
+    <div class="footer-top"><a class="wordmark footer-mark" href="#top" aria-label="Errazuriz home"><img src="assets/errazuriz-logo.png" alt="Errazuriz"></a><p>Our story. Your discovery.</p></div>
     <div class="footer-bottom"><span>© 2026 Errazuriz. All rights reserved.</span><span>Drink responsibly.</span><a href="https://www.errazuriz.com/en/sustainability/responsable-consume" target="_blank" rel="noreferrer">Responsible consumption ↗︎</a><a href="assets/sainsburys-terms.pdf" target="_blank" rel="noreferrer">Terms &amp; Conditions ↗︎</a></div>
   </footer>
   <script src="script.js"></script>

@@ -5,14 +5,15 @@ Landing estática (HTML/CSS/JS, sin build) del concurso *Our Story Your Discover
 ## Enlaces
 - Repositorio: https://github.com/cinmorabito-create/errazurizgranreserva
 - Sitio en vivo: pendiente (conectar el repo a Vercel; cada commit a `main` publica)
-- Registro de inscripciones (Google Sheet): pendiente
+- Registro de inscripciones (Google Sheet): https://docs.google.com/spreadsheets/d/1FNcTb5pr9DuMgzN5WI2nqbxAGkcPSamW6m_i1IWZEUk/edit
+- Endpoint del formulario (Apps Script): https://script.google.com/macros/s/AKfycbytR_cVj5GbIIvdykNBdO_gY4A4Yz0OFgVYG_CNiHYbOP309oKgKf695e7RyNGdaAOn9A/exec
 - Bases (T&Cs): `assets/sainsburys-terms.pdf`, enlazado desde el checkbox obligatorio y el footer
 
 ## Probar en local
 Abrir `index.html` en el navegador, o servir la carpeta: `python -m http.server 8000`.
 
 ## Conectar el formulario a una hoja nueva
-El formulario está desconectado (`scriptUrl = ''` en `script.js`) y muestra "Entries are not open yet" hasta completar estos pasos:
+Ya está conectado (`scriptUrl` en `script.js`). Si se rehace el script, estos son los pasos; si `scriptUrl` queda vacío, el formulario muestra "Entries are not open yet":
 
 1. Crear una Google Sheet nueva, p. ej. "Errazuriz Gran Reserva – Sainsbury's 2026 – Entries".
 2. En la hoja: **Extensiones → Apps Script**, borrar el contenido y pegar `apps-script/Code.gs`. Guardar.

@@ -4,8 +4,8 @@ const form = document.querySelector('#competition-form');
 const formError = document.querySelector('#form-error');
 const formSuccess = document.querySelector('#form-success');
 // Web app URL of apps-script/Code.gs, bound to the Sainsbury's entries sheet.
-// Left empty until that sheet exists, so entries never land in the UK sheet.
-const scriptUrl = '';
+// Points at the Sainsbury's entries sheet only, never the UK one.
+const scriptUrl = 'https://script.google.com/macros/s/AKfycbytR_cVj5GbIIvdykNBdO_gY4A4Yz0OFgVYG_CNiHYbOP309oKgKf695e7RyNGdaAOn9A/exec';
 const hero = document.querySelector('.hero');
 const heroImage = document.querySelector('.hero-image');
 const imageBreak = document.querySelector('.image-break');
