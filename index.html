@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -60,12 +60,16 @@
 
     <section class="image-break" aria-label="Errazuriz at the table">
       <picture>
+        <source type="image/webp" media="(min-width: 721px)" sizes="100vw"
+                srcset="assets/gran-reserva-chardonnay-wide-1200.webp 1200w, assets/gran-reserva-chardonnay-wide.webp 2400w">
+        <source type="image/jpeg" media="(min-width: 721px)" sizes="100vw"
+                srcset="assets/gran-reserva-chardonnay-wide-1200.jpg 1200w, assets/gran-reserva-chardonnay-wide.jpg 2400w">
         <source type="image/webp" sizes="100vw"
-                srcset="assets/estate-662-800.webp 800w, assets/estate-662.webp 1400w">
-        <img src="assets/estate-662.jpg"
-             srcset="assets/estate-662-800.jpg 800w, assets/estate-662.jpg 1400w"
-             sizes="100vw" width="1400" height="2098" loading="lazy"
-             alt="Errazuriz Estate Reserva Sauvignon Blanc served at a table with food">
+                srcset="assets/gran-reserva-chardonnay-800.webp 800w, assets/gran-reserva-chardonnay.webp 1600w">
+        <img src="assets/gran-reserva-chardonnay.jpg"
+             srcset="assets/gran-reserva-chardonnay-800.jpg 800w, assets/gran-reserva-chardonnay.jpg 1600w"
+             sizes="100vw" width="1600" height="1665" loading="lazy"
+             alt="Bottle of Errazuriz Gran Reserva Chardonnay between blocks of volcanic stone">
       </picture>
       <div class="image-note"><span>Made for the moment</span><strong>Pour. Pause.<br>Turn the page.</strong></div>
     </section>

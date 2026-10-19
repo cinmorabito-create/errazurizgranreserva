@@ -54,10 +54,10 @@ h1 em, h2 em { color: var(--sky); font-style: italic; }
 .statement-copy { color: rgba(23, 33, 27, .77); font-size: 17px; max-width: 440px; }
 .statement-copy p + p { margin-top: 24px; }
 .text-link { border-bottom: 1px solid currentColor; display: inline-block; font-size: 11px; letter-spacing: .11em; margin-top: 20px; padding-bottom: 5px; text-decoration: none; text-transform: uppercase; }
-.image-break { height: min(56vw, 720px); min-height: 480px; overflow: hidden; position: relative; }
+.image-break { background: #050505; height: min(56vw, 720px); min-height: 480px; overflow: hidden; position: relative; }
 .image-break::after { background: linear-gradient(90deg, rgba(23, 33, 27, .48) 0%, rgba(23, 33, 27, .12) 31%, transparent 62%); content: ''; inset: 0; pointer-events: none; position: absolute; }
 .image-break picture { display: block; height: 100%; }
-.image-break img { height: 100%; object-fit: cover; object-position: center 68%; transform: translateY(var(--parallax-y, 0px)) scale(1.1); transition: transform .08s linear; will-change: transform; width: 100%; }
+.image-break img { height: 100%; object-fit: cover; object-position: right center; transform: translateY(var(--parallax-y, 0px)) scale(1.1); transition: transform .08s linear; will-change: transform; width: 100%; }
 .image-note { bottom: 18%; color: var(--paper); left: 8vw; position: absolute; text-shadow: 0 2px 5px rgba(0, 0, 0, .72), 0 5px 22px rgba(0, 0, 0, .42); z-index: 1; }
 .image-note span { color: var(--paper); display: block; font-size: 10px; letter-spacing: .2em; margin-bottom: 15px; text-shadow: 0 1px 5px rgba(0, 0, 0, .7); text-transform: uppercase; }
 .image-note strong { font-family: var(--serif); font-size: clamp(2.4rem, 5vw, 5.3rem); font-weight: 400; letter-spacing: -.06em; line-height: .92; }
@@ -155,8 +155,8 @@ input:not([type="checkbox"]):focus { border-color: var(--sky); }
   .statement-grid, .competition { display: block; }
   .statement-copy { margin-top: 35px; }
   .image-break { height: 130vw; min-height: 0; }
-  .image-break img { object-position: 51% 64%; }
-  .image-note { bottom: 15%; left: 8vw; }
+  .image-break img { object-position: 49% 60%; }
+  .image-note { bottom: auto; left: 8vw; top: 9%; }
   .wines-heading { align-items: start; display: block; margin-bottom: 42px; }
   .wine-count { display: block; margin-top: 25px; }
   .wine-card { --pad: 5px; --pad-open: 12px; grid-template-columns: 33px 1fr 24px; }
