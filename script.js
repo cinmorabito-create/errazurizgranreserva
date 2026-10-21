@@ -16,7 +16,7 @@ const updateParallax = () => {
 
   if (hero && heroImage) {
     const heroBounds = hero.getBoundingClientRect();
-    const heroOffset = Math.max(-58, Math.min(58, heroBounds.top * -0.16));
+    const heroOffset = Math.max(-180, Math.min(180, heroBounds.top * -0.35));
     hero.style.setProperty('--hero-parallax-y', `${heroOffset}px`);
   }
 
