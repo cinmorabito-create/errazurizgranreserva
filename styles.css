@@ -5,6 +5,8 @@
   --paper: #f5f0e6;
   --cream: #ebe2d2;
   --sky: #3a8fc8;
+  --graphite: #1a1a1a;
+  --cyan: #6cc4ea;
   --gold: #c7a35a;
   --line: rgba(23, 33, 27, .18);
   --serif: 'Fraunces', Georgia, serif;
@@ -97,12 +99,12 @@ h1 em, h2 em { color: var(--sky); font-style: italic; }
 .wine-bottle-inner { overflow: hidden; }
 .wine-bottle img { display: block; height: 325px; margin: 6px auto 26px; object-fit: contain; opacity: 0; transition: opacity .25s ease .05s; width: auto; }
 .wine-card.is-open .wine-bottle img { opacity: 1; }
-.competition { background: var(--sky); color: var(--paper); display: grid; grid-template-columns: .95fr 1.05fr; padding: 120px 11vw; }
-.competition .section-kicker { color: var(--ink); }
+.competition { background: var(--graphite); color: var(--paper); display: grid; grid-template-columns: .95fr 1.05fr; padding: 120px 11vw; }
+.competition .section-kicker { color: var(--cyan); }
 .competition h2 { max-width: 520px; }
-.competition-lede { font-family: var(--serif); font-size: 25px; margin: 6px 0 65px; }
-.prize { border-top: 1px solid rgba(245, 240, 230, .5); max-width: 450px; padding-top: 18px; }
-.prize-label { color: var(--ink); }
+.competition-lede { color: var(--cyan); font-family: var(--serif); font-size: 25px; margin: 6px 0 65px; }
+.prize { border-top: 1px solid rgba(108, 196, 234, .45); max-width: 450px; padding-top: 18px; }
+.prize-label { color: var(--cyan); }
 .prize p { font-size: 15px; margin: 14px 0 0; max-width: 420px; }
 .form-panel { background: var(--paper); color: var(--ink); margin-left: 8vw; padding: 43px 48px 37px; }
 .form-intro { font-family: var(--serif); font-size: 25px; margin-bottom: 28px; }
