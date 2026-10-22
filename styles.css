@@ -132,7 +132,7 @@ input[type="date"] { -webkit-appearance: none; appearance: none; min-height: 43p
 .form-success p { margin: 0; }
 .site-footer { background: var(--ink); color: var(--paper); padding: 54px 5vw 27px; }
 .footer-top { align-items: start; display: flex; justify-content: space-between; }
-.footer-top p { color: var(--cyan); font-family: var(--serif); font-size: 23px; margin: 3px 0 0; }
+.footer-top p { color: var(--paper); font-family: var(--serif); font-size: 23px; margin: 3px 0 0; }
 .footer-bottom { border-top: 1px solid rgba(245, 240, 230, .2); display: flex; font-size: 9px; gap: 20px; justify-content: space-between; letter-spacing: .08em; margin-top: 70px; padding-top: 17px; text-transform: uppercase; }
 .footer-bottom a { text-decoration: none; }
 .footer-bottom a:hover { color: var(--sky); }
