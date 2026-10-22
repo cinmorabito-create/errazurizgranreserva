@@ -29,7 +29,7 @@ button, input { font: inherit; }
 .main-nav a:hover, .text-link:hover { color: var(--sky); }
 .nav-cta { border-bottom: 1px solid currentColor; padding-bottom: 4px; }
 .menu-toggle { display: none; }
-.hero { --header-h: 127px; background: var(--forest); color: var(--paper); min-height: max(760px, 100vh); overflow: hidden; position: relative; }
+.hero { --header-h: 127px; background: #050505; color: var(--paper); min-height: max(760px, 100vh); overflow: hidden; position: relative; }
 .hero-image { height: calc(100% - var(--header-h) * .65); left: 0; object-fit: cover; object-position: 50% top; position: absolute; top: calc(var(--header-h) * .65); transform: translateY(var(--hero-parallax-y, 0px)); transition: transform .08s linear; will-change: transform; width: 100%; }
 .hero-shade { background: linear-gradient(90deg, rgba(13, 30, 23, .82) 0%, rgba(13, 30, 23, .27) 48%, rgba(13, 30, 23, .05) 100%); inset: 0; position: absolute; }
 .hero-copy { bottom: 13%; left: 11vw; max-width: 620px; position: absolute; }
